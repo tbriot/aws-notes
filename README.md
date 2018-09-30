@@ -14,3 +14,7 @@ Actions suggested to support the load:
 - ask AWS support to increase Lambda concurrent executions from 1000 to 5000.
 - ask AWS support to increase number of ENIS from 350 to 2000.
 - create additional 2 Subnets = 500 additional IPs. 
+
+Notes:
+- backend systems will probably be the bottlenecks, before AWS services are.
+- the load will take weeks to ramp up. Will provide time to monitor and adjust if required.
