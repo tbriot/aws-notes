@@ -1,7 +1,7 @@
 # aws-notes
 ## Performance testing Amazon API Gateway and AWS Lambda
 - with authorization set to NONE, API Gateway introduces minimal latency. < 10msec. Tests should be run to check how much latency is added by Cognito Authorizer, Custom Authorizer or IAM Authentication.
-- a Lambda function acting as a HTTP proxy adds a 200 msec latency.
+- a Lambda function acting as a HTTP proxy adds a 200 msec latency. Even if containers are warm.
 - Lambda function cold starts add latency for the first requests. Up to a few seconds.
 - cold starts for Lambda function with VPC access take more time.
 - cold starts only affect the first requests. On the container is warm, there's no additional latency. Even for Lambda accessing VPCs.
