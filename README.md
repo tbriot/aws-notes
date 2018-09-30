@@ -21,3 +21,4 @@ Notes:
 
 Resources:
 https://winterwindsoftware.com/scaling-lambdas-inside-vpc/
+https://winterwindsoftware.com/lambda-scaling-calculator/
