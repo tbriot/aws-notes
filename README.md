@@ -3,7 +3,7 @@
 - with authorization set to NONE, API Gateway introduces minimal latency. < 10msec. Tests should be run to check how much latency is added by Cognito Authorizer, Custom Authorizer or IAM Authentication.
 - a Lambda function acting as a HTTP proxy adds a 200 msec latency. Even if containers are warm.
 - Lambda function cold starts add latency for the first requests. Up to a few seconds.
-- cold starts for Lambda function with VPC access take more time.
+- cold starts for Lambda function **with VPC access** take more time.
 - cold starts only affect the first requests. On the container is warm, there's no additional latency. Even for Lambda accessing VPCs.
 - when it comes to load: the first bottleneck is the limit of **Lambda concurrent executions**. **1000 per account** per default. Can be increased by contacting AWS support. Assuming a backend system takes 1 sec to process a request, this is a limit of 1000 req /sec.
 - if the limit of concurrent Lamda functions execution is exceeded then requests are **throttled**. Which means discarded for synchronous Lambda invocation. Can be monitored with the throttles metric in CloudWatch.
