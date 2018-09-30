@@ -18,3 +18,6 @@ Actions suggested to support the load:
 Notes:
 - backend systems will probably be the bottlenecks, before AWS services are.
 - the load will take weeks to ramp up. Will provide time to monitor and adjust if required.
+
+Resources:
+https://winterwindsoftware.com/scaling-lambdas-inside-vpc/
