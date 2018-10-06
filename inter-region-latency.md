@@ -30,3 +30,7 @@ From ca-central-1 ec2 instance : median=**170ms** / 95percentile=170ms
 Observations:
 - AWS Network does improve latency (200ms versus 300ms) between MTL and Sydney
 
+Resources:
+- https://www.cloudping.co/
+- https://www.cloudping.info/
+
