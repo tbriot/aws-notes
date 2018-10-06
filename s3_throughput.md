@@ -10,5 +10,8 @@ bucket in ca-central-1 to bucket in us-west-2 : **> 17MB/s**
 bucket in ca-central-1 to desktop in Montreal : > 4 MB/s  
 bucket in us-west-2 to desktop in Montreal : 3.5 MB/s
 
-# Observations
+## Observations
 - AWS Network has a huge bandwith, 10x my upload speed 
+
+Resources:
+- http://www.speedtest.net
